@@ -1,6 +1,5 @@
 import React from 'react';
 import App from './containers/App';
-import './assets/stylesheets/main.sass';
 
 let rootElement = document.getElementById('root')
 
@@ -10,3 +9,5 @@ React.render(
   </div>,
   rootElement
 )
+
+require("bootstrap-sass!./assets/stylesheets/bootstrap-sass.config.js");
