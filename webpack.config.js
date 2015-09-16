@@ -19,12 +19,12 @@ module.exports = {
   module: {
     loaders: [
       {
-      test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
-      exclude: /node_modules/,
-      include: __dirname
-    },
-    {test: /\.css$/, loader: 'style!css!'}
+        test: /\.js$/,
+        loaders: ['react-hot', 'babel'],
+        exclude: /node_modules/,
+        include: __dirname
+      },
+      {test: /\.css$/, loader: 'style!css!'}
   ]
   }
 };
