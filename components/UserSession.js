@@ -4,6 +4,7 @@ export class UserSession extends Component {
   render(){
     return (
       <div id='login'>
+        <img alt="enspiral" src="../assets/images/logos/enspiral.png"/>
         <h1>Login</h1>
         <table>
           <tr>
