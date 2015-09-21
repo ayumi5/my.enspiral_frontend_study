@@ -7,6 +7,5 @@ export const finalCreateStore = compose(
   devTools(),
   persistState(
     window.location.href.match(/[?&]debug_session=([^&]+)\b/)
-  ),
-  createStore
-);
+  )
+)(createStore);
