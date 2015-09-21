@@ -9,22 +9,22 @@ function user(state={
   switch(action.type){
     case PROCESS_USER:
       return Object.assign({}, state, {
-      proceccing: true
+      processing: true
     })
     case USER_LOGIN:
       return Object.assign({}, state, {
-        proceccing: false,
+        processing: false,
         Loggedin: true,
         info: action.user
       });
     case LOGIN_FAILED:
       return Object.assign({}, state, {
-        proceccing: false,
+        processing: false,
         Loggedin: false
       });
     case USER_LOGOUT:
       return Object.assign({}, state, {
-        proceccing: false,
+        processing: false,
         Loggedin: false
       });
     default:

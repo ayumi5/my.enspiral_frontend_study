@@ -15,6 +15,13 @@ function loginFailed(user){
   return {type: "LOGIN_FAILED", user}
 }
 
-function sendUser(user){
-  return {type: "SEND_USER", user}
+function processUser(user){
+  return {type: "PROCESS_USER", user}
+}
+
+export function authenticate(user) {
+  return dispatch => {
+    dispatch(processUser(user))
+  }
+  
 }

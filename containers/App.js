@@ -5,9 +5,13 @@ import { userLogin } from '../actions/userSession';
 
 export default class App extends Component {
   render(){
+    const { dispatch, user } = this.props;
     return (
       <div>
-        <UserSession />
+        <UserSession
+          onLoginClick={ (user)=>
+            dispatch(userLogin(user))
+          }/>
       </div>
     )
   }
