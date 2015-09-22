@@ -7,7 +7,6 @@ import rootReducer from './reducers';
 import App from './containers/App';
 import { createStore } from 'redux';
 
-//const store = createStore(rootReducer)
 const store = finalCreateStore(rootReducer)
 let rootElement = document.getElementById('root')
 

@@ -12,7 +12,7 @@ export class UserSession extends Component {
               <label htmlFor='user_email'>Email</label>
             </td>
             <td>
-              <input id='user_email' name='user[email]' size='30' tabIndex='1' type='text' ref='email'/>
+              <input id='user_email' name='user[email]' size='30' tabIndex='1' type='text' ref='email' value='user@name.com'/>
             </td>
           </tr>
           <tr>
@@ -20,7 +20,7 @@ export class UserSession extends Component {
               <label htmlFor='user_password'>Password</label>
             </td>
             <td>
-              <input id='user_password' name='user[password]' size='30' tabIndex='2' type='password' ref='password'/>
+              <input id='user_password' name='user[password]' size='30' tabIndex='2' type='password' ref='password' value='password'/>
             </td>
           </tr>
           <tr>
@@ -44,7 +44,7 @@ export class UserSession extends Component {
     const email = emailNode.value.trim();
     const passwordNode = findDOMNode(this.refs.password);
     const password = passwordNode.value.trim();
-    this.props.onLoginClick({email: email, pasword: password});
+    this.props.onLoginClick({email: email, password: password});
     emailNode.value = '';
     passwordNode.value = '';
   }
